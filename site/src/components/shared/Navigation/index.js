@@ -1,21 +1,9 @@
 import React from "react"
+import slugify from "slugify"
 import Logo from "assets/images/logo.svg"
 
 const Navigation = () => {
-  const links = [
-    {
-      path: `/`,
-      name: "How we work",
-    },
-    {
-      path: `/`,
-      name: "Blog",
-    },
-    {
-      path: `/`,
-      name: "Account",
-    },
-  ]
+  const links = ["How we work", "Blog", "Account"]
 
   return (
     <header>
@@ -24,8 +12,17 @@ const Navigation = () => {
         <ul>
           {links.map(link => {
             return (
-              <a href={link.path}>
-                <li>{link.name}</li>
+              <a
+                key={slugify(link)}
+                href={
+                  "/" +
+                  slugify(link, {
+                    replacement: "-",
+                    lower: true,
+                  })
+                }
+              >
+                <li>{link}</li>
               </a>
             )
           })}

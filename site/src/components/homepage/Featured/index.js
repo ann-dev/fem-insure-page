@@ -5,7 +5,7 @@ const FeaturedSection = () => (
   <section>
     {featuredData.map(item => {
       return (
-        <div>
+        <div key={item.imgAlt}>
           <img src={item.imgPath} alt={item.imgAlt} />
           <span>{item.title}</span>
           <p>{item.description}</p>
