@@ -6,7 +6,7 @@ export const FeaturedSectionWrapper = styled.section`
   flex-direction: column;
   height: 862px;
   justify-content: space-between;
-  margin: 80px 0;
+  margin: 80px 0 140px;
   max-width: 326px;
 `
 

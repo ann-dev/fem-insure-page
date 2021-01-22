@@ -19,7 +19,7 @@ export const ContentWrapper = styled.div`
   text-align: center;
 `
 
-export const HeroHeader = styled.span`
+export const FeaturedHeader = styled.span`
   display: block;
   font-family: "DM Serif Display", serif;
   font-size: 46px;
