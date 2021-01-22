@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
         background-color: ${COLORS.background_main};
         color: ${COLORS.font_main};
         font-family: 'Karla', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         -webkit-font-smoothing: antialiased;
 	    -moz-osx-font-smoothing: grayscale;
     }

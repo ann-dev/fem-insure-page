@@ -8,23 +8,26 @@ const FooterLinkSection = () => (
     {footerLinks.map(item => {
       return (
         <div key={slugify(item.category)}>
-          <span>{item.category}</span>
+          <span>{item.category || "Category"}</span>
           <ul>
-            {item.links.map(link => (
-              <li key={slugify(link)}>
-                <a
-                  href={
-                    "/" +
-                    slugify(link, {
-                      replacement: "-",
-                      lower: true,
-                    })
-                  }
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
+            {item.links.map(
+              link =>
+                (
+                  <li key={slugify(link)}>
+                    <a
+                      href={
+                        "/" +
+                        slugify(link, {
+                          replacement: "-",
+                          lower: true,
+                        })
+                      }
+                    >
+                      {link || "Link"}
+                    </a>
+                  </li>
+                )
+            )}
           </ul>
         </div>
       )
