@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'DM Serif Display', sans-serif;
+        font-family: 'DM Serif Display', serif;
         -webkit-font-smoothing: antialiased;
 	    -moz-osx-font-smoothing: grayscale;
     }

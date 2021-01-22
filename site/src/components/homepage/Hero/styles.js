@@ -20,16 +20,21 @@ export const HeroTextWrapper = styled.div`
   z-index: 1;
 `
 
-export const CurveLeftWrapper = styled.img`
+export const CurveLeftMobileWrapper = styled.img`
   left: 0;
   position: absolute;
-  top: 0;
+  top: -4px;
   z-index: -1;
+`
+export const CurveRightMobileWrapper = styled.img`
+  bottom: -175px;
+  position: absolute;
+  right: 0;
 `
 
 export const HeroHeader = styled.span`
   display: block;
-  font-family: "DM Serif Display", sans-serif;
+  font-family: "DM Serif Display", serif;
   font-size: 46px;
   letter-spacing: -0.67px;
   line-height: 46px;
@@ -37,6 +42,7 @@ export const HeroHeader = styled.span`
   width: 100%;
   z-index: 2;
 `
+
 export const HeroParagraph = styled.p`
   letter-spacing: 0;
   line-height: 26px;
@@ -45,5 +51,11 @@ export const HeroParagraph = styled.p`
 `
 
 export const HeroImageWrapper = styled.div`
-  height: 451px;
+  background-size: cover;
+  height: auto;
+  margin: 0;
+  overflow-y: hidden;
+  img {
+    width: 100%;
+  }
 `

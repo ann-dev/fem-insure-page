@@ -1,13 +1,15 @@
 import React from "react"
 
 import IntroImage from "assets/images/image-intro-mobile.jpg"
-import CurveLeft from "assets/images/bg-pattern-intro-left-mobile.svg"
+import CurveLeftMobile from "assets/images/bg-pattern-intro-left-mobile.svg"
+import CurveRightMobile from "assets/images/bg-pattern-intro-right-mobile.svg"
 import Button from "components/common/Button"
 
 import {
   HeroWrapper,
   HeroContentWrapper,
-  CurveLeftWrapper,
+  CurveLeftMobileWrapper,
+  CurveRightMobileWrapper,
   HeroTextWrapper,
   HeroHeader,
   HeroParagraph,
@@ -18,7 +20,8 @@ const Hero = () => (
   <HeroWrapper>
     <HeroContentWrapper>
       <HeroTextWrapper>
-        <CurveLeftWrapper src={CurveLeft} alt="abstract curves" />
+        <CurveLeftMobileWrapper src={CurveLeftMobile} alt="abstract curves" />
+        <CurveRightMobileWrapper src={CurveRightMobile} alt="abstract curves" />
         <HeroHeader>Humanizing your insurance.</HeroHeader>
         <HeroParagraph>
           Get your life insurance coverage easier and faster. We blend our
