@@ -3,7 +3,7 @@ import { COLORS } from "assets/constants/COLORS"
 
 export const HeroWrapper = styled.article`
   background-color: ${COLORS.background_hero};
-  color: ${COLORS.background_main};
+  color: ${COLORS.light_main};
 `
 export const HeroContentWrapper = styled.div`
   display: flex;

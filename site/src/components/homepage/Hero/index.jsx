@@ -28,7 +28,7 @@ const Hero = () => (
           expertise and technology to help you find the plan that’s right for
           you. Ensure you and your loved ones are protected.
         </HeroParagraph>
-        <Button className="light" style={{ width: 146 }}>
+        <Button darkMode buttonWidth="146px">
           View plans
         </Button>
       </HeroTextWrapper>

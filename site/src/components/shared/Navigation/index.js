@@ -1,7 +1,7 @@
 import React from "react"
 import slugify from "slugify"
 
-import Logo from "assets/images/logo.svg"
+import CompanyLogo from "components/common/CompanyLogo"
 import { NavWrapper, NavLinksList } from "./styles"
 
 const Navigation = () => {
@@ -9,7 +9,7 @@ const Navigation = () => {
 
   return (
     <NavWrapper>
-      <img src={Logo} alt="insure logo" />
+      <CompanyLogo />
       <nav>
         <NavLinksList>
           {links.map(link => {

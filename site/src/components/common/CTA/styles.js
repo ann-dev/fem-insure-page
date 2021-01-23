@@ -6,7 +6,7 @@ export const CTAWrapper = styled.section`
   background-color: ${COLORS.background_hero};
   display: flex;
   flex-direction: column;
-  color: ${COLORS.background_main};
+  color: ${COLORS.light_main};
   height: 344px;
   justify-content: center;
   position: relative;

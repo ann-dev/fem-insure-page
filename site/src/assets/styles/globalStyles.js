@@ -11,8 +11,8 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: inherit;
     }
     body {
-        background-color: ${COLORS.background_main};
-        color: ${COLORS.font_main};
+        background-color: ${COLORS.light_main};
+        color: ${COLORS.black};
         font-family: 'Karla', sans-serif;
         font-size: 16px;
         -webkit-font-smoothing: antialiased;
@@ -43,6 +43,11 @@ const GlobalStyle = createGlobalStyle`
     }
     a{
         color: inherit;
+        text-decoration: none;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
     }
     ol,
     ul {

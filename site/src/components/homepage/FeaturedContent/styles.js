@@ -5,12 +5,13 @@ export const FeaturedWrapper = styled.article`
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin: 140px 0;
   width: 100%;
 `
 export const FeaturedDivider = styled.div`
   height: 1px;
-  background-color: ${COLORS.accent_purple};
-  margin: 140px 0 40px;
+  background-color: ${COLORS.accent_light};
+  margin-bottom: 40px;
   width: 140px;
 `
 
