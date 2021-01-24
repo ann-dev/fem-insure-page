@@ -18,6 +18,9 @@ export const HeroTextWrapper = styled.div`
   position: relative;
   text-align: center;
   z-index: 1;
+  button {
+    width: 146px;
+  }
 `
 
 export const CurveLeftMobileWrapper = styled.img`

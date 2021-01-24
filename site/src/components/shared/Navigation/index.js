@@ -1,37 +1,45 @@
-import React from "react"
-import slugify from "slugify"
+import React, { useState } from "react"
 
+import NavigationLinks from "./NavigationLinks"
 import CompanyLogo from "components/common/CompanyLogo"
-import { NavWrapper, NavLinksList } from "./styles"
+import Burger from "assets/images/icon-hamburger.svg"
+import CloseMenu from "assets/images/icon-close.svg"
+import { NavWrapper, BurgerWrapper } from "./styles"
+import DropdownMenu from "./DropdownMenu"
 
 const Navigation = () => {
-  const links = ["How we work", "Blog", "Account"]
+  const [isActive, setIsActive] = useState(false)
+
+  const toggleScroll = () => {
+    !isActive
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "scroll")
+  }
+
+  const toggleDropdown = () => {
+    setIsActive(!isActive)
+    toggleScroll()
+  }
+
+  const CheckIfOpen = isActive ? true : false
 
   return (
-    <NavWrapper>
-      <CompanyLogo />
-      <nav>
-        <NavLinksList>
-          {links.map(link => {
-            return (
-              <a
-                key={slugify(link)}
-                href={
-                  "/" +
-                  slugify(link, {
-                    replacement: "-",
-                    lower: true,
-                  })
-                }
-              >
-                <li>{link || "Link"}</li>
-              </a>
-            )
-          })}
-        </NavLinksList>
-        <button>View plans</button>
-      </nav>
-    </NavWrapper>
+    <>
+      <NavWrapper>
+        <CompanyLogo />
+        <nav>
+          <NavigationLinks />
+          <button>View plans</button>
+          <BurgerWrapper
+            src={isActive ? CloseMenu : Burger}
+            alt="horizontal lines in a box"
+            onClick={toggleDropdown}
+            isOpen={CheckIfOpen}
+          />
+        </nav>
+      </NavWrapper>
+      <DropdownMenu dropdownToggled={isActive ? true : false} />
+    </>
   )
 }
 

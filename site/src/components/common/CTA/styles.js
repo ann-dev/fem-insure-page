@@ -10,6 +10,9 @@ export const CTAWrapper = styled.section`
   height: 344px;
   justify-content: center;
   position: relative;
+  button {
+    width: 160px;
+  }
 `
 
 export const CTACurveWrapper = styled.img`

@@ -12,7 +12,6 @@ const Button = styled.button`
   height: 40px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  width: ${props => props.buttonWidth};
   &:hover {
     cursor: pointer;
   }

@@ -8,9 +8,7 @@ const CTA = ({ text, buttonText }) => (
   <CTAWrapper>
     <CTACurveWrapper src={CTACurve} alt="abstract curve" />
     <CTAHeader>{text}</CTAHeader>
-    <Button darkMode buttonWidth="160px">
-      {buttonText}
-    </Button>
+    <Button darkMode>{buttonText}</Button>
   </CTAWrapper>
 )
 
