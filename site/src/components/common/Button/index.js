@@ -13,6 +13,10 @@ const Button = styled.button`
   letter-spacing: 1.5px;
   text-transform: uppercase;
   &:hover {
+    background: ${props =>
+      props.darkMode ? `${COLORS.light_main}` : `${COLORS.black}`};
+    color: ${props =>
+      props.darkMode ? `${COLORS.purple_main}` : `${COLORS.light_main}`};
     cursor: pointer;
   }
 `

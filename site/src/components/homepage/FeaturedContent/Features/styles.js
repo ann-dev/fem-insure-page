@@ -1,5 +1,7 @@
 import styled from "styled-components"
+
 import { COLORS } from "assets/constants/COLORS"
+import { DEVICES } from "assets/constants/DEVICES"
 
 export const FeaturedSectionWrapper = styled.section`
   display: flex;
@@ -8,6 +10,9 @@ export const FeaturedSectionWrapper = styled.section`
   justify-content: space-between;
   margin: 80px 0 140px;
   max-width: 326px;
+  @media ${DEVICES.tablet} {
+    margin: 96px auto 140px;
+  }
 `
 
 export const FeaturedItem = styled.div`
@@ -27,6 +32,6 @@ export const FeaturedTitle = styled.span`
 `
 
 export const FeaturedParagraph = styled.p`
-  color: ${COLORS.accent_gray};
+  color: ${COLORS.accent_grey};
   line-height: 26px;
 `

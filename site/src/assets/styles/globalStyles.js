@@ -2,6 +2,15 @@ import { createGlobalStyle } from "styled-components"
 import { COLORS } from "assets/constants/COLORS"
 
 const GlobalStyle = createGlobalStyle`
+    html{
+        --color-acc-blue: ${COLORS.accent_blue};
+        --color-acc-grey: ${COLORS.accent_grey};
+        --color-acc-light: ${COLORS.accent_light};
+        --color-black: ${COLORS.black};
+        --color-l-grey: ${COLORS.light_grey};
+        --color-l-main: ${COLORS.light_main};
+        --color-purple: ${COLORS.purple_main}
+    }
     html {
         box-sizing: border-box;
     }
@@ -11,8 +20,8 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: inherit;
     }
     body {
-        background-color: ${COLORS.light_main};
-        color: ${COLORS.black};
+        background-color: var(--color-l-main);
+        color: var(----color-black);
         font-family: 'Karla', sans-serif;
         font-size: 16px;
         -webkit-font-smoothing: antialiased;

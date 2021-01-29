@@ -2,14 +2,16 @@ import React from "react"
 import slugify from "slugify"
 
 import { footerLinks } from "../footerData"
+
 import {
+  FooterLinksWrapper,
   FooterLinkBlock,
   FooterLinkHeading,
   FooterLinkList,
 } from "./styles"
 
 const FooterLinkSection = () => (
-  <section>
+  <FooterLinksWrapper>
     {footerLinks.map(item => {
       return (
         <FooterLinkBlock key={slugify(item.category)}>
@@ -34,7 +36,7 @@ const FooterLinkSection = () => (
         </FooterLinkBlock>
       )
     })}
-  </section>
+  </FooterLinksWrapper>
 )
 
 export default FooterLinkSection

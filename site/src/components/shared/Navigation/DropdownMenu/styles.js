@@ -28,6 +28,7 @@ export const DropdownCurveWrapper = styled.img`
   bottom: 0;
   left: 0;
   position: absolute;
+  width: 100%;
 `
 
 

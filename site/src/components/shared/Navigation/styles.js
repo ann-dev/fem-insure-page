@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { COLORS } from "assets/constants/COLORS"
-
+import { DEVICES } from "assets/constants/DEVICES"
 
 export const NavWrapper = styled.header`
   align-items: center;
@@ -16,7 +16,13 @@ export const NavWrapper = styled.header`
     flex-direction: row;
   }
   button {
+    border: 2px solid ${COLORS.black};
     display: none;
+    width: 146px;
+    @media ${DEVICES.tablet} {
+      display: block;
+      margin-left: 33px;
+    }
   }
 `
 
@@ -25,5 +31,8 @@ export const BurgerWrapper = styled.img`
   flex-shrink: 0;
   &:hover {
     cursor: pointer;
+  }
+  @media ${DEVICES.tablet} {
+    display: none;
   }
 `

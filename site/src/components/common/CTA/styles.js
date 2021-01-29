@@ -1,9 +1,11 @@
 import styled from "styled-components"
+
 import { COLORS } from "assets/constants/COLORS"
+import { DEVICES } from "assets/constants/DEVICES"
 
 export const CTAWrapper = styled.section`
   align-items: center;
-  background-color: ${COLORS.background_hero};
+  background-color: ${COLORS.purple_main};
   display: flex;
   flex-direction: column;
   color: ${COLORS.light_main};
@@ -29,4 +31,9 @@ export const CTAHeader = styled.span`
   line-height: 40px;
   margin-bottom: 40px;
   z-index: 2;
+  @media ${DEVICES.tablet} {
+    font-size: 56px;
+    line-height: 56px;
+    max-width: 75%;
+  }
 `

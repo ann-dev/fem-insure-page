@@ -2,11 +2,14 @@ import React from "react"
 import slugify from "slugify"
 import { NavigationLinksWrapper } from "./styles"
 
-const NavigationLinks = ({ dropdownVariant }) => {
+const NavigationLinks = ({ dropdownVariant, navbarVariant }) => {
   const links = ["How we work", "Blog", "Account"]
 
   return (
-    <NavigationLinksWrapper dropdownVariant={dropdownVariant}>
+    <NavigationLinksWrapper
+      dropdownVariant={dropdownVariant}
+      navbarVariant={navbarVariant}
+    >
       {links.map(link => {
         return (
           <a

@@ -1,6 +1,6 @@
 import React from "react"
 
-import IntroImage from "assets/images/image-intro-mobile.jpg"
+import IntroImage from "assets/images/image-intro-full.jpg"
 import CurveLeftMobile from "assets/images/bg-pattern-intro-left-mobile.svg"
 import CurveRightMobile from "assets/images/bg-pattern-intro-right-mobile.svg"
 import Button from "components/common/Button"
@@ -14,9 +14,10 @@ import {
   HeroHeader,
   HeroParagraph,
   HeroImageWrapper,
+  HeroImage
 } from "./styles"
 
-const Hero = () => (
+const Hero = ({ fluid }) => (
   <HeroWrapper>
     <HeroContentWrapper>
       <HeroTextWrapper>
@@ -28,12 +29,14 @@ const Hero = () => (
           expertise and technology to help you find the plan that’s right for
           you. Ensure you and your loved ones are protected.
         </HeroParagraph>
-        <Button darkMode>
-          View plans
-        </Button>
+        <Button darkMode>View plans</Button>
       </HeroTextWrapper>
       <HeroImageWrapper>
-        <img src={IntroImage} alt="family holding hands" />
+        <HeroImage
+          fluid={fluid}
+          style={{ backgroundImage: `url(${IntroImage})` }}
+        />
+        {/* <img src={IntroImage} alt="family holding hands" /> */}
       </HeroImageWrapper>
     </HeroContentWrapper>
   </HeroWrapper>

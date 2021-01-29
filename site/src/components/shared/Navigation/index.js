@@ -1,11 +1,13 @@
 import React, { useState } from "react"
 
 import NavigationLinks from "./NavigationLinks"
+import Button from "components/common/Button"
+
+import DropdownMenu from "./DropdownMenu"
 import CompanyLogo from "components/common/CompanyLogo"
 import Burger from "assets/images/icon-hamburger.svg"
 import CloseMenu from "assets/images/icon-close.svg"
 import { NavWrapper, BurgerWrapper } from "./styles"
-import DropdownMenu from "./DropdownMenu"
 
 const Navigation = () => {
   const [isActive, setIsActive] = useState(false)
@@ -29,7 +31,7 @@ const Navigation = () => {
         <CompanyLogo />
         <nav>
           <NavigationLinks />
-          <button>View plans</button>
+          <Button>View plans</Button>
           <BurgerWrapper
             src={isActive ? CloseMenu : Burger}
             alt="horizontal lines in a box"
