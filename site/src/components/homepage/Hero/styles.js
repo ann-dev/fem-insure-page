@@ -22,12 +22,17 @@ export const HeroTextWrapper = styled.div`
   text-align: center;
   width: 100%;
   z-index: 1;
-  button {
-    width: 146px;
-  }
   @media ${DEVICES.tablet} {
     height: calc(50vh - 80px);
     padding-top: calc((50vh - 80px) / 6);
+  }
+  @media ${DEVICES.laptop} {
+    height: 500px;
+    position: relative;
+    text-align: left;
+  }
+  button {
+    width: 146px;
   }
 `
 
@@ -36,12 +41,40 @@ export const CurveLeftMobileWrapper = styled.img`
   position: absolute;
   top: 0;
   z-index: -1;
+  @media ${DEVICES.laptop} {
+    display: none;
+  }
 `
 
 export const CurveRightMobileWrapper = styled.img`
   bottom: -175px;
   position: absolute;
   right: 0;
+  @media ${DEVICES.laptop} {
+    display: none;
+  }
+`
+
+export const CurveLeftDesktopWrapper = styled.img`
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 450px;
+  width: 150px;
+  @media ${DEVICES.laptop} {
+    display: block;
+  }
+`
+
+export const CurveRightDesktopWrapper = styled.img`
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 250px;
+  @media ${DEVICES.laptop} {
+    display: block;
+  }
 `
 
 export const HeroHeader = styled.span`
@@ -59,6 +92,9 @@ export const HeroHeader = styled.span`
     margin: 0 auto 26px;
     max-width: 500px;
   }
+  @media ${DEVICES.laptop} {
+    margin: 0;
+  }
 `
 
 export const HeroParagraph = styled.p`
@@ -70,6 +106,9 @@ export const HeroParagraph = styled.p`
     margin: 0 auto 32px;
     max-width: 500px;
   }
+  @media ${DEVICES.laptop} {
+    margin: 30px 0;
+  }
 `
 
 export const HeroImageWrapper = styled.div`
@@ -78,8 +117,14 @@ export const HeroImageWrapper = styled.div`
   margin: 0;
   overflow-y: hidden;
   @media ${DEVICES.tablet} {
-    position: relative;
     height: 50vh;
+  }
+  @media ${DEVICES.laptop} {
+    height: calc(650px * 0.8);
+    position: absolute;
+    right: 26px;
+    top: 132.5px;
+    width: calc(540px * 0.8);
   }
 `
 

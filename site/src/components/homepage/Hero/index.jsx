@@ -3,6 +3,8 @@ import React from "react"
 import IntroImage from "assets/images/image-intro-full.jpg"
 import CurveLeftMobile from "assets/images/bg-pattern-intro-left-mobile.svg"
 import CurveRightMobile from "assets/images/bg-pattern-intro-right-mobile.svg"
+import CurveLeftDesktop from "assets/images/bg-pattern-intro-left-desktop.svg"
+import CurveRightDesktop from "assets/images/bg-pattern-intro-right-desktop.svg"
 import Button from "components/common/Button"
 
 import {
@@ -10,6 +12,8 @@ import {
   HeroContentWrapper,
   CurveLeftMobileWrapper,
   CurveRightMobileWrapper,
+  CurveLeftDesktopWrapper,
+  CurveRightDesktopWrapper,
   HeroTextWrapper,
   HeroHeader,
   HeroParagraph,
@@ -23,6 +27,8 @@ const Hero = ({ fluid }) => (
       <HeroTextWrapper>
         <CurveLeftMobileWrapper src={CurveLeftMobile} alt="abstract curves" />
         <CurveRightMobileWrapper src={CurveRightMobile} alt="abstract curves" />
+        <CurveLeftDesktopWrapper src={CurveLeftDesktop} alt="abstract curves" />
+        <CurveRightDesktopWrapper src={CurveRightDesktop} alt="abstract curves" />
         <HeroHeader>Humanizing your insurance.</HeroHeader>
         <HeroParagraph>
           Get your life insurance coverage easier and faster. We blend our

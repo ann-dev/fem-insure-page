@@ -11,6 +11,9 @@ export const NavWrapper = styled.header`
   padding: 0 24px;
   width: 100%;
   z-index: 99;
+  @media ${DEVICES.laptopM} {
+      padding: 0 165px;
+    }
   nav {
     display: flex;
     flex-direction: row;

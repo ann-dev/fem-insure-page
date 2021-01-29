@@ -9,6 +9,9 @@ export const FeaturedWrapper = styled.article`
   flex-direction: column;
   margin: 140px 0;
   width: 100%;
+  @media ${DEVICES.laptop} {
+    margin: 205px 0 158px;
+  }
 `
 
 export const FeaturedDivider = styled.div`
