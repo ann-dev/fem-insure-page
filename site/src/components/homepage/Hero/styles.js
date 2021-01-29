@@ -11,7 +11,13 @@ export const HeroWrapper = styled.article`
 export const HeroContentWrapper = styled.div`
   display: flex;
   flex-direction: column-reverse;
+  position: relative;
+  margin-top: 80px;
   width: 100%;
+  @media ${DEVICES.laptopM} {
+    margin: 80px auto 0;
+    max-width: 1110px;
+  }
 `
 
 export const HeroTextWrapper = styled.div`
@@ -31,9 +37,22 @@ export const HeroTextWrapper = styled.div`
     position: relative;
     text-align: left;
   }
+  @media ${DEVICES.laptopM} {
+    height: 600px;
+  }
+  @media ${DEVICES.laptopM} {
+    padding: 105px 0 0;
+  }
   button {
     width: 146px;
   }
+`
+
+export const HeroTextDivider = styled.div`
+  height: 1px;
+  background-color: var(--color-l-main);
+  margin-bottom: 65px;
+  width: 150px;
 `
 
 export const CurveLeftMobileWrapper = styled.img`
@@ -59,10 +78,14 @@ export const CurveLeftDesktopWrapper = styled.img`
   display: none;
   left: 0;
   position: absolute;
-  top: 450px;
+  top: 520px;
   width: 150px;
   @media ${DEVICES.laptop} {
     display: block;
+  }
+  @media ${DEVICES.laptopM} {
+    top: 510px;
+    width: 195px;
   }
 `
 
@@ -70,10 +93,15 @@ export const CurveRightDesktopWrapper = styled.img`
   display: none;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 80px;
   width: 250px;
+  z-index: 2;
   @media ${DEVICES.laptop} {
     display: block;
+  }
+  @media ${DEVICES.laptopM} {
+    top: 0;
+    width: 435px;
   }
 `
 
@@ -95,6 +123,9 @@ export const HeroHeader = styled.span`
   @media ${DEVICES.laptop} {
     margin: 0;
   }
+  @media ${DEVICES.laptopM} {
+    letter-spacing: -1px;
+  }
 `
 
 export const HeroParagraph = styled.p`
@@ -107,7 +138,10 @@ export const HeroParagraph = styled.p`
     max-width: 500px;
   }
   @media ${DEVICES.laptop} {
-    margin: 30px 0;
+    margin: 28px 0;
+  }
+  @media ${DEVICES.laptopM} {
+    max-width: 550px;
   }
 `
 
@@ -123,8 +157,14 @@ export const HeroImageWrapper = styled.div`
     height: calc(650px * 0.8);
     position: absolute;
     right: 26px;
-    top: 132.5px;
+    top: 30px;
     width: calc(540px * 0.8);
+  }
+  @media ${DEVICES.laptopM} {
+    height: 650px;
+    right: 0;
+    top: 105px;
+    width: 540px;
   }
 `
 

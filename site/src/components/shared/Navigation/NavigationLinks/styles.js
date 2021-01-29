@@ -14,6 +14,7 @@ export const NavigationLinksWrapper = styled.ul`
       props.dropdownVariant ? `${COLORS.light_main}` : `${COLORS.accent_grey}`};
     font-size: ${props => (props.dropdownVariant ? "20px" : "13px")};
     font-weight: 700;
+    letter-spacing: 1.5px;
     margin-bottom: ${props => (props.dropdownVariant ? "40px" : 0)};
     text-transform: uppercase;
     @media ${DEVICES.tablet} {

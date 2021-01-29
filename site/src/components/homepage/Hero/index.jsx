@@ -10,6 +10,7 @@ import Button from "components/common/Button"
 import {
   HeroWrapper,
   HeroContentWrapper,
+  HeroTextDivider,
   CurveLeftMobileWrapper,
   CurveRightMobileWrapper,
   CurveLeftDesktopWrapper,
@@ -18,17 +19,18 @@ import {
   HeroHeader,
   HeroParagraph,
   HeroImageWrapper,
-  HeroImage
+  HeroImage,
 } from "./styles"
 
 const Hero = ({ fluid }) => (
   <HeroWrapper>
+    <CurveLeftDesktopWrapper src={CurveLeftDesktop} alt="abstract curves" />
+    <CurveRightDesktopWrapper src={CurveRightDesktop} alt="abstract curves" />
     <HeroContentWrapper>
       <HeroTextWrapper>
+        <HeroTextDivider />
         <CurveLeftMobileWrapper src={CurveLeftMobile} alt="abstract curves" />
         <CurveRightMobileWrapper src={CurveRightMobile} alt="abstract curves" />
-        <CurveLeftDesktopWrapper src={CurveLeftDesktop} alt="abstract curves" />
-        <CurveRightDesktopWrapper src={CurveRightDesktop} alt="abstract curves" />
         <HeroHeader>Humanizing your insurance.</HeroHeader>
         <HeroParagraph>
           Get your life insurance coverage easier and faster. We blend our

@@ -9,8 +9,10 @@ export const NavWrapper = styled.header`
   height: 80px;
   justify-content: space-between;
   padding: 0 24px;
+  position: fixed;
+  top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 9;
   @media ${DEVICES.laptopM} {
       padding: 0 165px;
     }
