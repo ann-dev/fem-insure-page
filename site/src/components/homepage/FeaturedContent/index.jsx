@@ -11,8 +11,8 @@ import {
 
 const FeaturedContent = () => (
   <FeaturedWrapper>
-    <FeaturedDivider />
     <ContentWrapper>
+      <FeaturedDivider />
       <FeaturedHeader>We’re different</FeaturedHeader>
       <Features />
       <CTA text="Find out more about how we work" buttonText="How we work" />

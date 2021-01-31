@@ -49,10 +49,14 @@ export const HeroTextWrapper = styled.div`
 `
 
 export const HeroTextDivider = styled.div`
+  display: none;
   height: 1px;
   background-color: var(--color-l-main);
-  margin-bottom: 65px;
+  margin-bottom: 64px;
   width: 150px;
+  @media ${DEVICES.laptop} {
+    display: block;
+  }
 `
 
 export const CurveLeftMobileWrapper = styled.img`
