@@ -35,6 +35,8 @@ export const FooterDesktopCurveWrapper = styled.img`
   z-index: -1;
   @media ${DEVICES.tablet} {
     display: block;
+    top: 0;
+    width: 525px;
   }
 `
 
@@ -47,4 +49,9 @@ export const FooterContentWrapper = styled.div`
   max-width: 327px;
   text-align: center;
   z-index: 1;
+  @media ${DEVICES.laptopM} {
+    max-width: 1110px;
+    padding-top: 67px;
+    text-align: left;
+  }
 `

@@ -15,6 +15,14 @@ export const FooterLinksWrapper = styled.section`
     margin-bottom: 50px;
     max-height: 350px;
     width: 100%;
+    @media ${DEVICES.laptopM} {
+      align-self: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 0 50px 0;
+      max-width: 940px;
+    }
   }
 `
 
@@ -34,6 +42,9 @@ export const FooterLinkList = styled.ul`
   height: 100%;
   justify-content: space-between;
   margin-bottom: 40px;
+  @media ${DEVICES.laptopM} {
+    justify-content: flex-start;
+  }
   li {
     margin-bottom: 16px;
   }

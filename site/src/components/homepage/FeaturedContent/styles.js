@@ -14,7 +14,7 @@ export const FeaturedWrapper = styled.article`
   }
   @media ${DEVICES.laptopM} {
     align-items: flex-start;
-    margin: 231px 0 158px;
+    margin: 231px 0 150px;
   }
 `
 
