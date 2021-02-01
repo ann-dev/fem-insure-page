@@ -12,7 +12,6 @@ export const FooterWrapper = styled.footer`
   overflow-x: hidden;
   position: relative;
   text-transform: uppercase;
-  z-index: -1;
   a {
     color: ${COLORS.black};
   }
@@ -22,7 +21,7 @@ export const FooterMobileCurveWrapper = styled.img`
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
   @media ${DEVICES.tablet} {
     display: none;
   }
@@ -32,7 +31,7 @@ export const FooterDesktopCurveWrapper = styled.img`
   display: none;
   position: absolute;
   width: 80%;
-  z-index: -1;
+  z-index: 0;
   @media ${DEVICES.tablet} {
     display: block;
     top: 0;

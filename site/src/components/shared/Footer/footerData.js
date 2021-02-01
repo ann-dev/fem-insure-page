@@ -7,18 +7,22 @@ export const footerSocials = [
   {
     name: "facebook",
     path: FacebookLogo,
+    link: "https://www.facebook.com/"
   },
   {
     name: "twitter",
     path: TwitterLogo,
+    link: "https://twitter.com/"
   },
   {
     name: "pinterest",
     path: PinterestLogo,
+    link: "https://pinterest.com/"
   },
   {
     name: "instagram",
     path: InstagramLogo,
+    link: "https://www.instagram.com/"
   },
 ]
 

@@ -12,6 +12,7 @@ const Button = styled.button`
   height: 40px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  transition: all 0.2s ease-in;
   &:hover {
     background: ${props =>
       props.darkMode ? `${COLORS.light_main}` : `${COLORS.black}`};

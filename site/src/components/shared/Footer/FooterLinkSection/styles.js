@@ -4,6 +4,7 @@ import { DEVICES } from "assets/constants/DEVICES"
 export const FooterLinksWrapper = styled.section`
   display: flex;
   flex-direction: column;
+  z-index: 2;
   @media ${DEVICES.tablet} {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -47,6 +48,9 @@ export const FooterLinkList = styled.ul`
   }
   li {
     margin-bottom: 16px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   li:last-child {
     margin-bottom: 0;

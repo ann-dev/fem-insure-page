@@ -50,13 +50,9 @@ const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
 	    -moz-osx-font-smoothing: grayscale;
     }
-    a{
+    a {
         color: inherit;
         text-decoration: none;
-        &:hover {
-            cursor: pointer;
-            text-decoration: underline;
-        }
     }
     ol,
     ul {

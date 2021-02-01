@@ -3,19 +3,28 @@ import { COLORS } from "assets/constants/COLORS"
 import { DEVICES } from "assets/constants/DEVICES"
 
 export const NavWrapper = styled.header`
-  align-items: center;
   background-color: ${COLORS.light_main};
-  display: flex;
   height: 80px;
-  justify-content: space-between;
   padding: 0 24px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9;
   @media ${DEVICES.laptopM} {
-      padding: 0 165px;
-    }
+    padding: 0 165px;
+  }
+`
+
+export const NavContentWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 25px;
+  @media ${DEVICES.tablet} {
+    max-width: 1110px;
+    padding-top: 20px;
+  }
   nav {
     display: flex;
     flex-direction: row;

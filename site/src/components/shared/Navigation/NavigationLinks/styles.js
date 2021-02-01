@@ -9,6 +9,11 @@ export const NavigationLinksWrapper = styled.ul`
     align-items: center;
     display: flex;
   }
+  a {
+    @media ${DEVICES.tablet} {
+      margin-left: 26px;
+    }
+  }
   li {
     color: ${props =>
       props.dropdownVariant ? `${COLORS.light_main}` : `${COLORS.accent_grey}`};
@@ -17,8 +22,9 @@ export const NavigationLinksWrapper = styled.ul`
     letter-spacing: 1.5px;
     margin-bottom: ${props => (props.dropdownVariant ? "40px" : 0)};
     text-transform: uppercase;
-    @media ${DEVICES.tablet} {
-      margin-left: 26px;
+    transition: all 0.1s ease-in;
+    &:hover {
+      color: var(--color-black);
     }
   }
 `
