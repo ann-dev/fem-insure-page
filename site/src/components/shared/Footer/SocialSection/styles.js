@@ -2,14 +2,26 @@ import styled from "styled-components"
 import { DEVICES } from "assets/constants/DEVICES"
 
 export const SocialSectionWrapper = styled.section`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 40px;
+  z-index: 2;
   @media ${DEVICES.laptopM} {
+    align-items: flex-start;
     align-self: flex-start;
+    flex-direction: row;
     justify-content: space-between;
-    display: flex;
     margin: 0;
     position: relative;
     width: 100%;
+  }
+  img {
+    transition: all 0.2s ease-in;
+    &:hover {
+      cursor: pointer;
+      filter: brightness(30%);
+    }
   }
 `
 
@@ -32,6 +44,6 @@ export const SocialsDivider = styled.div`
   @media ${DEVICES.laptopM} {
     bottom: 50px;
     position: absolute;
-    width: 1100px;
+    width: 1110px;
   }
 `

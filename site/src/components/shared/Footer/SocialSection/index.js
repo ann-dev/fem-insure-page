@@ -9,7 +9,13 @@ const SocialSection = () => (
     <CompanyLogo />
     <SocialsWrapper>
       {footerSocials.map(item => {
-        return <img key={item.name} src={item.path} alt={item.name + " icon"} />
+        return (
+          <div key={item.name}>
+            <a href={item.link} target="_blank" rel="noreferrer">
+              <img src={item.path} alt={item.name + " icon"} />
+            </a>
+          </div>
+        )
       })}
     </SocialsWrapper>
     <SocialsDivider />

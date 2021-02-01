@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Logo from "assets/images/logo.svg"
 import styled from "styled-components"
 
-const LogoWrapper = styled.img`
+const LogoWrapper = styled.div`
   height: 18px;
   width: 112px;
   &:hover {
@@ -13,10 +13,11 @@ const LogoWrapper = styled.img`
 `
 
 const CompanyLogo = () => (
-  <Link to="/">
-    <LogoWrapper src={Logo} alt="Insure logotype" />
-  </Link>
+  <LogoWrapper>
+    <Link to="/">
+      <img src={Logo} alt="Insure logotype" />
+    </Link>
+  </LogoWrapper>
 )
-
 
 export default CompanyLogo

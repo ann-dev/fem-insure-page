@@ -1,8 +1,12 @@
 import React from "react"
+import styled from "styled-components"
 
+const AttributionWrapper = styled.div`
+  text-align: center;
+`
 
 const Attribution = () => (
-  <section>
+  <AttributionWrapper>
     <p>
       Challenge by {" "}
       <a
@@ -23,7 +27,7 @@ const Attribution = () => (
       ann-dev
     </a>
     .
-  </section>
+  </AttributionWrapper>
 )
 
 export default Attribution

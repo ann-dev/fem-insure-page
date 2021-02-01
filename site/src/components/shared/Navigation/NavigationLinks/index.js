@@ -12,18 +12,19 @@ const NavigationLinks = ({ dropdownVariant, navbarVariant }) => {
     >
       {links.map(link => {
         return (
-          <a
-            key={slugify(link)}
-            href={
-              "/" +
-              slugify(link, {
-                replacement: "-",
-                lower: true,
-              })
-            }
-          >
-            <li>{link || "Link"}</li>
-          </a>
+          <li key={slugify(link)}>
+            <a
+              href={
+                "/" +
+                slugify(link, {
+                  replacement: "-",
+                  lower: true,
+                })
+              }
+            >
+              {link || "Link"}{" "}
+            </a>
+          </li>
         )
       })}
     </NavigationLinksWrapper>

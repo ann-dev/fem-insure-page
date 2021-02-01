@@ -1,10 +1,12 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import IntroImage from "assets/images/image-intro-full.jpg"
 import CurveLeftMobile from "assets/images/bg-pattern-intro-left-mobile.svg"
 import CurveRightMobile from "assets/images/bg-pattern-intro-right-mobile.svg"
 import CurveLeftDesktop from "assets/images/bg-pattern-intro-left-desktop.svg"
 import CurveRightDesktop from "assets/images/bg-pattern-intro-right-desktop.svg"
+
 import Button from "components/common/Button"
 
 import {
@@ -37,7 +39,9 @@ const Hero = ({ fluid }) => (
           expertise and technology to help you find the plan that’s right for
           you. Ensure you and your loved ones are protected.
         </HeroParagraph>
-        <Button darkMode>View plans</Button>
+        <Button darkMode>
+          <Link to="/view-plans">View plans</Link>
+        </Button>
       </HeroTextWrapper>
       <HeroImageWrapper>
         <HeroImage
