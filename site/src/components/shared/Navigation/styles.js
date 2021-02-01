@@ -21,6 +21,7 @@ export const NavContentWrapper = styled.div`
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 25px;
+  position: relative;
   @media ${DEVICES.tablet} {
     max-width: 1110px;
     padding-top: 20px;

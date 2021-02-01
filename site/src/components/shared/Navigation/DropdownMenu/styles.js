@@ -7,8 +7,9 @@ export const DropdownWrapper = styled.div`
   height: ${props => props.dropdownToggled ? `calc(100vh - 80px)` : "0px"};
   opacity: ${props => props.dropdownToggled ? 1 : 0};
   padding-top: 55px;
-  position: absolute;
+  position: fixed;
   text-align: center;
+  top: 80px;
   visibility: ${props => props.dropdownToggled ? "visible" : "hidden"};
   width: 100%;
   z-index: 5;
