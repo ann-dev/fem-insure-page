@@ -6,9 +6,9 @@ import Button from "components/common/Button"
 import { DropdownWrapper, DropdownCurveWrapper } from "./styles"
 
 const DropdownMenu = ({ dropdownToggled }) => (
-  <DropdownWrapper dropdownToggled={dropdownToggled}>
+  <DropdownWrapper id="dropdown" dropdownToggled={dropdownToggled}>
     <NavigationLinks dropdownVariant />
-    <DropdownCurveWrapper src={DropdownCurve} alt="abstract curved lines" />
+    <DropdownCurveWrapper src={DropdownCurve} alt="" role="presentation"/>
     <Button darkMode>View plans</Button>
   </DropdownWrapper>
 )

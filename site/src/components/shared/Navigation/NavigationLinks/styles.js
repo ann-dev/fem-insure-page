@@ -1,22 +1,27 @@
 import styled from "styled-components"
-import { COLORS } from "assets/constants/COLORS"
-import { DEVICES } from "assets/constants/DEVICES"
+import { SIZE, DEVICES } from "assets/constants/DEVICES"
 
 export const NavigationLinksWrapper = styled.ul`
   display: ${props => (props.dropdownVariant ? "flex" : "none")};
   flex-direction: ${props => (props.dropdownVariant ? "column" : "row")};
+  @media (orientation: landscape) and (max-width: ${SIZE.tablet}) {
+    display: flex;
+  }
   @media ${DEVICES.tablet} {
     align-items: center;
     display: flex;
   }
   a {
+    @media (orientation: landscape) and (max-width: ${SIZE.tablet}) {
+      margin-left: 26px;
+    }
     @media ${DEVICES.tablet} {
       margin-left: 26px;
     }
   }
   li {
     color: ${props =>
-      props.dropdownVariant ? `${COLORS.light_main}` : `${COLORS.accent_grey}`};
+      props.dropdownVariant ? `var(--color-l-main)` : `var(--color-acc-grey)`};
     font-size: ${props => (props.dropdownVariant ? "20px" : "13px")};
     font-weight: 700;
     letter-spacing: 1.5px;

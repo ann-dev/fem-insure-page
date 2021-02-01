@@ -15,8 +15,8 @@ import {
 
 const CTA = ({ text, buttonText, buttonLink }) => (
   <CTAWrapper>
-    <CTAMobileCurveWrapper src={CTAMobileCurve} alt="abstract curve" />
-    <CTADesktopCurveWrapper src={CTADesktopCurve} alt="abstract curve" />
+    <CTAMobileCurveWrapper src={CTAMobileCurve} alt="" role="presentation"/>
+    <CTADesktopCurveWrapper src={CTADesktopCurve} alt="" role="presentation"/>
     <CTAHeader>{text}</CTAHeader>
     <Button darkMode>
       <Link to={buttonLink}>{buttonText}</Link>

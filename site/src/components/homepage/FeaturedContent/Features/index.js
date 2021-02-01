@@ -1,6 +1,8 @@
 import React from "react"
+import slugify from "slugify"
 
 import { featuredData } from "./featuredData"
+
 import {
   FeaturedSectionWrapper,
   FeaturedItem,
@@ -13,8 +15,8 @@ const FeaturedSection = () => (
   <FeaturedSectionWrapper>
     {featuredData.map(item => {
       return (
-        <FeaturedItem key={item.imgAlt}>
-          <FeaturedIcon src={item.imgPath} alt={item.imgAlt} />
+        <FeaturedItem key={slugify(item.title)}>
+          <FeaturedIcon src={item.imgPath} alt="" role="presentation"/>
           <FeaturedTitle>{item.title}</FeaturedTitle>
           <FeaturedParagraph>{item.description}</FeaturedParagraph>
         </FeaturedItem>

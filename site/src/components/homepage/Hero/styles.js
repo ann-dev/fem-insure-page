@@ -1,12 +1,11 @@
 import styled from "styled-components"
 import Image from "gatsby-image"
 
-import { COLORS } from "assets/constants/COLORS"
 import { DEVICES } from "assets/constants/DEVICES"
 
 export const HeroWrapper = styled.article`
-  background-color: ${COLORS.purple_main};
-  color: ${COLORS.light_main};
+  background-color: var(--color-purple);
+  color: var(--color-l-main);
 `
 export const HeroContentWrapper = styled.div`
   display: flex;

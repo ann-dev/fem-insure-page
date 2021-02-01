@@ -14,9 +14,15 @@ const Navigation = () => {
   const [isActive, setIsActive] = useState(false)
 
   const toggleScroll = () => {
-    !isActive
-      ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "scroll")
+    const dropdownContainer = document.getElementById("dropdown")
+
+    if (dropdownContainer.style.display === "none") {
+      document.body.style.overflow = "scroll"
+    } else if (!isActive) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "scroll"
+    }
   }
 
   const toggleDropdown = () => {

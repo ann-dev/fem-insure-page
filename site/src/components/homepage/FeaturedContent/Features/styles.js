@@ -1,6 +1,4 @@
 import styled from "styled-components"
-
-import { COLORS } from "assets/constants/COLORS"
 import { DEVICES } from "assets/constants/DEVICES"
 
 export const FeaturedSectionWrapper = styled.section`
@@ -46,6 +44,6 @@ export const FeaturedTitle = styled.span`
 `
 
 export const FeaturedParagraph = styled.p`
-  color: ${COLORS.accent_grey};
+  color: var(--color-acc-grey);
   line-height: 26px;
 `

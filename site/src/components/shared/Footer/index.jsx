@@ -17,10 +17,11 @@ import {
 const Footer = () => {
   return (
     <FooterWrapper>
-      <FooterMobileCurveWrapper src={FooterMobileCurve} alt="abstract curves" />
+      <FooterMobileCurveWrapper src={FooterMobileCurve} alt="" role="presentation"/>
       <FooterDesktopCurveWrapper
         src={FooterDesktopCurve}
-        alt="abstract curves"
+        alt=""
+        role="presentation"
       />
       <FooterContentWrapper>
         <SocialSection />

@@ -1,23 +1,26 @@
 import styled from "styled-components"
-import { COLORS } from "assets/constants/COLORS"
+import { SIZE } from "assets/constants/DEVICES"
 
 export const DropdownWrapper = styled.div`
-  background-color: ${COLORS.black};
+  background-color: var(--color-black);
   color: white;
-  height: ${props => props.dropdownToggled ? `calc(100vh - 80px)` : "0px"};
-  opacity: ${props => props.dropdownToggled ? 1 : 0};
+  height: ${props => (props.dropdownToggled ? `calc(100vh - 80px)` : "0px")};
+  opacity: ${props => (props.dropdownToggled ? 1 : 0)};
   padding-top: 55px;
   position: fixed;
   text-align: center;
   top: 80px;
-  visibility: ${props => props.dropdownToggled ? "visible" : "hidden"};
+  visibility: ${props => (props.dropdownToggled ? "visible" : "hidden")};
   width: 100%;
   z-index: 5;
   > * {
-    display: ${props => props.dropdownToggled ? "block" : "none"};
+    display: ${props => (props.dropdownToggled ? "block" : "none")};
+  }
+  @media (orientation: landscape) and (max-width: ${SIZE.tablet}) {
+    display: none;
   }
   button {
-    border: 2px solid ${COLORS.light_main};
+    border: 2px solid var(--color-l-main);
     font-size: 20px;
     height: 56px;
     margin: 0 auto;
@@ -31,5 +34,3 @@ export const DropdownCurveWrapper = styled.img`
   position: absolute;
   width: 100%;
 `
-
-

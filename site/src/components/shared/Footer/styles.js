@@ -1,11 +1,9 @@
 import styled from "styled-components"
-
-import { COLORS } from "assets/constants/COLORS"
 import { DEVICES } from "assets/constants/DEVICES"
 
 export const FooterWrapper = styled.footer`
-  background-color: ${COLORS.light_grey};
-  color: ${COLORS.accent_grey};
+  background-color: var(--color-l-grey);
+  color: var(--color-acc-grey);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -13,7 +11,7 @@ export const FooterWrapper = styled.footer`
   position: relative;
   text-transform: uppercase;
   a {
-    color: ${COLORS.black};
+    color: var(--color-black);
   }
 `
 

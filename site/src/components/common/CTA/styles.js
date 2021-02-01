@@ -1,14 +1,12 @@
 import styled from "styled-components"
-
-import { COLORS } from "assets/constants/COLORS"
 import { DEVICES } from "assets/constants/DEVICES"
 
 export const CTAWrapper = styled.section`
   align-items: center;
-  background-color: ${COLORS.purple_main};
+  background-color: var(--color-purple);
   display: flex;
   flex-direction: column;
-  color: ${COLORS.light_main};
+  color: var(--color-l-main);
   height: 344px;
   justify-content: center;
   position: relative;

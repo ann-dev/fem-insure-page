@@ -1,12 +1,11 @@
 import styled from "styled-components"
-import { COLORS } from "src/assets/constants/COLORS"
 
 const Button = styled.button`
   background: transparent;
   border: 1.5px solid
-    ${props => (props.darkMode ? `${COLORS.light_main}` : `${COLORS.black}`)};
+    ${props => (props.darkMode ? `var(--color-l-main)` : `var(--color-black)`)};
   color: ${props =>
-    props.darkMode ? `${COLORS.light_main}` : `${COLORS.black}`};
+    props.darkMode ? `var(--color-l-main)` : `var(--color-black)`};
   font-family: "Karla", sans-serif;
   font-weight: 700;
   height: 40px;
@@ -15,9 +14,9 @@ const Button = styled.button`
   transition: all 0.2s ease-in;
   &:hover {
     background: ${props =>
-      props.darkMode ? `${COLORS.light_main}` : `${COLORS.black}`};
+      props.darkMode ? `var(--color-l-main)` : `var(--color-black)`};
     color: ${props =>
-      props.darkMode ? `${COLORS.purple_main}` : `${COLORS.light_main}`};
+      props.darkMode ? `var(--color-purple)` : `var(--color-l-main)`};
     cursor: pointer;
   }
 `

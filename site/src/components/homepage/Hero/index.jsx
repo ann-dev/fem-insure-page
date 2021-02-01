@@ -26,13 +26,13 @@ import {
 
 const Hero = ({ fluid }) => (
   <HeroWrapper>
-    <CurveLeftDesktopWrapper src={CurveLeftDesktop} alt="abstract curves" />
-    <CurveRightDesktopWrapper src={CurveRightDesktop} alt="abstract curves" />
+    <CurveLeftDesktopWrapper src={CurveLeftDesktop} alt="" role="presentation"/>
+    <CurveRightDesktopWrapper src={CurveRightDesktop} alt="" role="presentation"/>
     <HeroContentWrapper>
       <HeroTextWrapper>
         <HeroTextDivider />
-        <CurveLeftMobileWrapper src={CurveLeftMobile} alt="abstract curves" />
-        <CurveRightMobileWrapper src={CurveRightMobile} alt="abstract curves" />
+        <CurveLeftMobileWrapper src={CurveLeftMobile} alt="" role="presentation"/>
+        <CurveRightMobileWrapper src={CurveRightMobile} alt="" role="presentation"/>
         <HeroHeader>Humanizing your insurance.</HeroHeader>
         <HeroParagraph>
           Get your life insurance coverage easier and faster. We blend our
