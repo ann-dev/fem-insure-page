@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => (
 )
 
 export const query = graphql`
-  query BufferImages {
+  query Buffer404Images {
     hero: file(name: { eq: "image-intro-full" }) {
       childImageSharp {
         fluid(maxWidth: 1600, quality: 80) {

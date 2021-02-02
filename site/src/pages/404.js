@@ -1,12 +1,26 @@
 import React from "react"
-import SEO from "../components/seo"
+import { graphql } from "gatsby"
 
-const NotFoundPage = () => (
+import SEO from "components/seo"
+import NotFound from "components/page404/NotFound"
+
+const PageNotFound = ({ data }) => (
   <>
     <SEO title="404: Not found" />
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist...</p>
+    <NotFound fluid={data.hero.childImageSharp.fluid}/>
   </>
 )
 
-export default NotFoundPage
+export const query = graphql`
+  query BufferImages {
+    hero: file(name: { eq: "404asset" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 80) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+  }
+`
+
+export default PageNotFound

@@ -48,7 +48,6 @@ const Hero = ({ fluid }) => (
           fluid={fluid}
           style={{ backgroundImage: `url(${IntroImage})` }}
         />
-        {/* <img src={IntroImage} alt="family holding hands" /> */}
       </HeroImageWrapper>
     </HeroContentWrapper>
   </HeroWrapper>
