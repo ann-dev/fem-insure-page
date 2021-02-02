@@ -23,7 +23,7 @@
     <li>Responsive layouts based on Flexbox and CSS Grid</li>
     <li>Dropdown menu on mobile view</li>
     <li>CI/CD integration with Netlify</li>
-    <li>Custom 404 page //COMING SOON</li>
+    <li>Custom 404 page</li>
 </ul>
 
 ## Usage

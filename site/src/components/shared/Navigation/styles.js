@@ -10,9 +10,6 @@ export const NavWrapper = styled.header`
   top: 0;
   width: 100%;
   z-index: 9;
-  @media ${DEVICES.laptopM} {
-    padding: 0 165px;
-  }
 `
 
 export const NavContentWrapper = styled.div`
