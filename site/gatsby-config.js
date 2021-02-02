@@ -3,8 +3,8 @@ const path = require("path")
 module.exports = {
   siteMetadata: {
     title: `Frontend Mentor | Insure landing page`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Responsive page design challenge solution`,
+    author: `@ganndev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -41,8 +41,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `hsl(256, 26%, 20%)`,
+        theme_color: `hsl(256, 26%, 20%)`,
         display: `minimal-ui`,
         icon: `src/assets/images/favicon-32x32.png`,
       },

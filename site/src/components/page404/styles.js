@@ -18,7 +18,7 @@ export const NotFoundWrapper = styled.div`
     }
   }
   button {
-      width: 130px;
+    width: 130px;
   }
 `
 
@@ -36,7 +36,7 @@ export const NotFoundContentWrapper = styled.div`
 
 export const NotFoundHeader = styled.span`
   display: block;
-  font-family: "Raleway-Bold", sans-serif;
+  font-family: "DM Serif Display", sans-serif;
   font-size: 24px;
   margin-bottom: 8px;
   margin-top: 28px;
