@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { SIZE, DEVICES } from "assets/constants/DEVICES"
+import { DEVICES } from "assets/constants/DEVICES"
 
 export const NavWrapper = styled.header`
   background-color: var(--color-l-main);
@@ -19,9 +19,6 @@ export const NavContentWrapper = styled.div`
   margin: 0 auto;
   padding-top: 25px;
   position: relative;
-  @media (orientation: landscape) and (max-width: ${SIZE.tablet}) {
-    padding-top: 30px;
-  }
   @media ${DEVICES.tablet} {
     max-width: 1110px;
     padding-top: 20px;
@@ -46,9 +43,6 @@ export const BurgerWrapper = styled.img`
   flex-shrink: 0;
   &:hover {
     cursor: pointer;
-  }
-  @media (orientation: landscape) and (max-width: ${SIZE.tablet}) {
-    display: none;
   }
   @media ${DEVICES.tablet} {
     display: none;

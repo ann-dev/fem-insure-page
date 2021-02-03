@@ -8,10 +8,8 @@ import FeaturedContent from "components/homepage/FeaturedContent"
 const IndexPage = ({ data }) => (
   <>
     <SEO title="Home" />
-    <main>
-      <Hero fluid={data.hero.childImageSharp.fluid}/>
-      <FeaturedContent />
-    </main>
+    <Hero fluid={data.hero.childImageSharp.fluid} />
+    <FeaturedContent />
   </>
 )
 

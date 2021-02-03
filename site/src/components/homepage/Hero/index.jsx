@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { motion } from "framer-motion"
 
 import IntroImage from "assets/images/image-intro-full.jpg"
 import CurveLeftMobile from "assets/images/bg-pattern-intro-left-mobile.svg"
@@ -24,15 +25,40 @@ import {
   HeroImage,
 } from "./styles"
 
+// const list = { visible: { opacity: 1, y: 0 }, hidden: { opacity: 0, y: 50 } }
+// const item = { hidden: { x: -10, opacity: 1 } }
+
 const Hero = ({ fluid }) => (
   <HeroWrapper>
-    <CurveLeftDesktopWrapper src={CurveLeftDesktop} alt="" role="presentation"/>
-    <CurveRightDesktopWrapper src={CurveRightDesktop} alt="" role="presentation"/>
+    <CurveLeftDesktopWrapper
+      src={CurveLeftDesktop}
+      alt=""
+      role="presentation"
+    />
+    <CurveRightDesktopWrapper
+      src={CurveRightDesktop}
+      alt=""
+      role="presentation"
+    />
     <HeroContentWrapper>
-      <HeroTextWrapper>
+      <HeroTextWrapper
+        as={motion.div}
+        initial="hidden"
+        animate="visible"
+        transition={{ ease: "easeOut", duration: 1 }}
+        // variants={list}
+      >
         <HeroTextDivider />
-        <CurveLeftMobileWrapper src={CurveLeftMobile} alt="" role="presentation"/>
-        <CurveRightMobileWrapper src={CurveRightMobile} alt="" role="presentation"/>
+        <CurveLeftMobileWrapper
+          src={CurveLeftMobile}
+          alt=""
+          role="presentation"
+        />
+        <CurveRightMobileWrapper
+          src={CurveRightMobile}
+          alt=""
+          role="presentation"
+        />
         <HeroHeader>Humanizing your insurance.</HeroHeader>
         <HeroParagraph>
           Get your life insurance coverage easier and faster. We blend our
