@@ -1,6 +1,7 @@
 import React from "react"
 import slugify from "slugify"
 
+import FadeInView from "components/common/FadeInView"
 import { featuredData } from "./featuredData"
 
 import {
@@ -16,9 +17,11 @@ const FeaturedSection = () => (
     {featuredData.map(item => {
       return (
         <FeaturedItem key={slugify(item.title)}>
-          <FeaturedIcon src={item.imgPath} alt="" role="presentation"/>
-          <FeaturedTitle>{item.title}</FeaturedTitle>
-          <FeaturedParagraph>{item.description}</FeaturedParagraph>
+          <FadeInView>
+            <FeaturedIcon src={item.imgPath} alt="" role="presentation" />
+            <FeaturedTitle>{item.title}</FeaturedTitle>
+            <FeaturedParagraph>{item.description}</FeaturedParagraph>
+          </FadeInView>
         </FeaturedItem>
       )
     })}

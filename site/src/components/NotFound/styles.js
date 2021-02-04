@@ -26,7 +26,7 @@ export const NotFoundContentWrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 80px auto;
   @media ${DEVICES.laptop} {
     flex-direction: row;
     justify-content: space-around;
@@ -63,4 +63,7 @@ export const NotFoundImage = styled(Image)`
   background-repeat: no-repeat;
   height: 100%;
   width: 300px;
+  @media ${DEVICES.laptopM} {
+    width: 400px;
+  }
 `
