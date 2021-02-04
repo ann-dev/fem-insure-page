@@ -29,13 +29,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Karla\:400,700`, `DM Serif Display\:400,500,600,700,800,900`],
-        display: "swap",
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

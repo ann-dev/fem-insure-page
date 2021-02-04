@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import { COLORS } from "assets/constants/COLORS"
+import "./typography.css"
 
 const GlobalStyle = createGlobalStyle`
     html{
@@ -22,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         background-color: var(--color-l-main);
         color: var(----color-black);
-        font-family: 'Karla', sans-serif;
+        font-family: 'Karla-Regular', sans-serif;
         font-size: 16px;
         -webkit-font-smoothing: antialiased;
 	    -moz-osx-font-smoothing: grayscale;

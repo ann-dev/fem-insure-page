@@ -6,8 +6,7 @@ const Button = styled.button`
     ${props => (props.darkMode ? `var(--color-l-main)` : `var(--color-black)`)};
   color: ${props =>
     props.darkMode ? `var(--color-l-main)` : `var(--color-black)`};
-  font-family: "Karla", sans-serif;
-  font-weight: 700;
+  font-family: "Karla-Bold", sans-serif;
   height: 40px;
   letter-spacing: 1.5px;
   text-transform: uppercase;

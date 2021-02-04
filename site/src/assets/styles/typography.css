@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Karla-Regular";
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/Karla-variable.ttf"), local("Lucida Grande, sans-serif");
+}
+
+@font-face {
+  font-family: "Karla-Bold";
+  font-display: swap;
+  font-weight: 700;
+  src: url("../fonts/Karla-variable.ttf"), local("Lucida Grande, sans-serif");
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-display: swap;
+  src: url("../fonts/DMSerifDisplay-Regular.ttf"),
+    local("Lucida Grande, sans-serif");
+}
