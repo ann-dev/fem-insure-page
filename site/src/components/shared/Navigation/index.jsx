@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 
 import NavigationLinks from "./NavigationLinks"
@@ -10,29 +10,7 @@ import Burger from "assets/images/icon-hamburger.svg"
 import CloseMenu from "assets/images/icon-close.svg"
 import { NavWrapper, NavContentWrapper, BurgerWrapper } from "./styles"
 
-const Navigation = () => {
-  const [isActive, setIsActive] = useState(false)
-
-  const toggleScroll = () => {
-    const dropdownContainer = document.getElementById("dropdown")
-
-    if (dropdownContainer.style.display === "none") {
-      document.body.style.overflow = "scroll"
-    } else if (!isActive) {
-      document.body.style.overflow = "hidden"
-    } else {
-      document.body.style.overflow = "scroll"
-    }
-  }
-
-  const toggleDropdown = () => {
-    setIsActive(!isActive)
-    toggleScroll()
-  }
-
-  const CheckIfOpen = isActive ? true : false
-
-  return (
+const Navigation = ({ isOpen, dropdownToggled, onClick }) => (
     <>
       <NavWrapper>
         <NavContentWrapper>
@@ -43,17 +21,16 @@ const Navigation = () => {
               <Link to="/view-plans">View plans</Link>
             </Button>
             <BurgerWrapper
-              src={isActive ? CloseMenu : Burger}
+              src={dropdownToggled ? CloseMenu : Burger}
               alt="horizontal lines in a box"
-              onClick={toggleDropdown}
-              isOpen={CheckIfOpen}
+              onClick={onClick}
+              isOpen={isOpen}
             />
           </nav>
         </NavContentWrapper>
       </NavWrapper>
-      <DropdownMenu dropdownToggled={isActive ? true : false} />
+      <DropdownMenu dropdownToggled={dropdownToggled} />
     </>
-  )
-}
+)
 
 export default Navigation

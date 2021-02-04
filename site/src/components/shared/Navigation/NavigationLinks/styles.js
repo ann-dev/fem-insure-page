@@ -4,9 +4,6 @@ import { SIZE, DEVICES } from "assets/constants/DEVICES"
 export const NavigationLinksWrapper = styled.ul`
   display: ${props => (props.dropdownVariant ? "flex" : "none")};
   flex-direction: ${props => (props.dropdownVariant ? "column" : "row")};
-  @media (orientation: landscape) and (max-width: ${SIZE.tablet}) {
-    display: flex;
-  }
   @media ${DEVICES.tablet} {
     align-items: center;
     display: flex;

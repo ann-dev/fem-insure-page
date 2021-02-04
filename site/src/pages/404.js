@@ -2,17 +2,17 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import SEO from "components/seo"
-import NotFound from "components/page404/NotFound"
+import NotFound from "components/NotFound"
 
 const PageNotFound = ({ data }) => (
   <>
     <SEO title="404: Not found" />
-    <NotFound fluid={data.hero.childImageSharp.fluid}/>
+    <NotFound fluid={data.hero.childImageSharp.fluid} />
   </>
 )
 
 export const query = graphql`
-  query BufferImages {
+  query Buffer404Images {
     hero: file(name: { eq: "404asset" }) {
       childImageSharp {
         fluid(maxWidth: 1600, quality: 80) {
