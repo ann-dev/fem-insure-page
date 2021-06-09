@@ -17,7 +17,7 @@ export const query = graphql`
   query BufferImages {
     hero: file(name: { eq: "image-intro-full" }) {
       childImageSharp {
-        fluid(maxWidth: 1600, quality: 80) {
+        fluid(maxWidth: 1600, quality: 70) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }

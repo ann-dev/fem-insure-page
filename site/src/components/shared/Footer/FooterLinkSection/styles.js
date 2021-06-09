@@ -49,6 +49,7 @@ export const FooterLinkList = styled.ul`
   li {
     margin-bottom: 16px;
     &:hover {
+      cursor: pointer;
       text-decoration: underline;
     }
   }

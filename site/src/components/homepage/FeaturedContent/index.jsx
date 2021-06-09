@@ -23,7 +23,7 @@ const FeaturedContent = () => (
         <CTA
           text="Find out more about how we work"
           buttonText="How we work"
-          buttonLink="/how-we-work"
+          buttonLink="/"
         />
       </FadeInView>
     </ContentWrapper>

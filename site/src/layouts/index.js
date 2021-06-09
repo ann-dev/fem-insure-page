@@ -1,24 +1,20 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import {
-  disableBodyScroll,
-  enableBodyScroll,
-} from "body-scroll-lock"
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock"
 
 import GlobalStyle from "assets/styles/globalStyles"
 import Navigation from "components/shared/Navigation"
 import Footer from "components/shared/Footer"
 
-const GlobalWrapper = styled.main`
-`
+const GlobalWrapper = styled.main``
 
 const MainLayout = ({ children }) => {
   const [isNavActive, setINavsActive] = useState(false)
-  const CheckIfOpen = isNavActive ? true : false
+  const CheckIfOpen = isNavActive
 
   isNavActive
-      ? disableBodyScroll(GlobalWrapper)
-      : enableBodyScroll(GlobalWrapper)
+    ? disableBodyScroll(GlobalWrapper)
+    : enableBodyScroll(GlobalWrapper)
 
   const toggleDropdown = () => {
     setINavsActive(!isNavActive)
@@ -29,7 +25,7 @@ const MainLayout = ({ children }) => {
       <GlobalStyle />
       <Navigation
         isOpen={CheckIfOpen}
-        dropdownToggled={isNavActive ? true : false}
+        dropdownToggled={isNavActive}
         onClick={toggleDropdown}
       />
       <GlobalWrapper>

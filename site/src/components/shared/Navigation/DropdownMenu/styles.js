@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import Button  from "components/common/Button"
+import Button from "components/common/Button"
 import { SIZE } from "assets/constants/DEVICES"
 
 export const DropdownWrapper = styled.div`

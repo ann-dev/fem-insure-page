@@ -18,19 +18,7 @@ const FooterLinkSection = () => (
           <FooterLinkHeading>{item.category || "Category"}</FooterLinkHeading>
           <FooterLinkList>
             {item.links.map(link => (
-              <li key={slugify(link)}>
-                <a
-                  href={
-                    "/" +
-                    slugify(link, {
-                      replacement: "-",
-                      lower: true,
-                    })
-                  }
-                >
-                  {link || "Link"}
-                </a>
-              </li>
+              <li key={slugify(link)}>{link || "Link"}</li>
             ))}
           </FooterLinkList>
         </FooterLinkBlock>

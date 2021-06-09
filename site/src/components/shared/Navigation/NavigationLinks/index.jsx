@@ -1,6 +1,7 @@
 import React from "react"
 import slugify from "slugify"
-import { NavigationLinksWrapper } from "./styles"
+
+import { NavigationLinksWrapper, NavigationLinkItem } from "./styles"
 
 const NavigationLinks = ({ dropdownVariant, navbarVariant }) => {
   const links = ["How we work", "Blog", "Account"]
@@ -12,19 +13,9 @@ const NavigationLinks = ({ dropdownVariant, navbarVariant }) => {
     >
       {links.map(link => {
         return (
-          <li key={slugify(link)}>
-            <a
-              href={
-                "/" +
-                slugify(link, {
-                  replacement: "-",
-                  lower: true,
-                })
-              }
-            >
-              {link || "Link"}{" "}
-            </a>
-          </li>
+          <NavigationLinkItem key={slugify(link)}>
+            {link || "Link"}
+          </NavigationLinkItem>
         )
       })}
     </NavigationLinksWrapper>

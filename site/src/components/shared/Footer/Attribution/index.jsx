@@ -8,7 +8,7 @@ const AttributionWrapper = styled.div`
 const Attribution = () => (
   <AttributionWrapper>
     <p>
-      Challenge by {" "}
+      Challenge by{" "}
       <a
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
@@ -18,7 +18,7 @@ const Attribution = () => (
       </a>
       .
     </p>
-    Coded by {" "}
+    Coded by{" "}
     <a
       href="https://github.com/ann-dev"
       target="_blank"

@@ -8,7 +8,7 @@ import { DropdownWrapper, DropdownCurveWrapper } from "./styles"
 const DropdownMenu = ({ dropdownToggled }) => (
   <DropdownWrapper id="dropdown" dropdownToggled={dropdownToggled}>
     <NavigationLinks dropdownVariant />
-    <DropdownCurveWrapper src={DropdownCurve} alt="" role="presentation"/>
+    <DropdownCurveWrapper src={DropdownCurve} alt="" role="presentation" />
     <Button darkMode>View plans</Button>
   </DropdownWrapper>
 )

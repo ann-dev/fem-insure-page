@@ -1,6 +1,5 @@
 import React from "react"
 import { useMediaQuery } from "react-responsive"
-import { Link } from "gatsby"
 import { motion } from "framer-motion"
 
 import IntroImage from "assets/images/image-intro-full.jpg"
@@ -75,9 +74,7 @@ const Hero = ({ fluid }) => {
             expertise and technology to help you find the plan that’s right for
             you. Ensure you and your loved ones are protected.
           </HeroParagraph>
-          <Button darkMode>
-            <Link to="/view-plans">View plans</Link>
-          </Button>
+          <Button darkMode>View plans</Button>
         </HeroTextWrapper>
         <HeroImageWrapper>
           <HeroImage
